@@ -59,10 +59,6 @@ void main() {
         }
     }
 
-    // float x = st.x;
-    // float x = mouseSt.x;
-    // float x = fract(u_time / 8.0);
-
     float x = mode == ST_X ? st.x : mode == MOUSE_X ? mouseSt.x : fract(u_time / 8.0);
 
     vec3 pct = shapingFunction(x);

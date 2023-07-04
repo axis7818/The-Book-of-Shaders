@@ -18,26 +18,31 @@
 	"black": {
 		"scope": "glsl",
 		"prefix": "black",
-		"body": "vec4(0.0, 0.0, 0.0, 1.0)"
+		"body": "vec3(0.0, 0.0, 0.0)"
 	},
 	"red": {
 		"scope": "glsl",
 		"prefix": "red",
-		"body": "vec4(1.0, 0.0, 0.0, 1.0)"
+		"body": "vec3(1.0, 0.0, 0.0)"
 	},
 	"green": {
 		"scope": "glsl",
 		"prefix": "green",
-		"body": "vec4(0.0, 1.0, 0.0, 1.0)"
+		"body": "vec3(0.0, 1.0, 0.0)"
 	},
 	"blue": {
 		"scope": "glsl",
 		"prefix": "blue",
-		"body": "vec4(0.0, 0.0, 1.0, 1.0)"
+		"body": "vec3(0.0, 0.0, 1.0)"
+	},
+	"yellow": {
+		"scope": "glsl",
+		"prefix": "yellow",
+		"body": "vec3(1.0, 1.0, 0.0)"
 	},
 	"white": {
 		"scope": "glsl",
 		"prefix": "white",
-		"body": "vec4(1.0, 1.0, 1.0, 1.0)"
+		"body": "vec3(1.0, 1.0, 1.0)"
 	}
 }
