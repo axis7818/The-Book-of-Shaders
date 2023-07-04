@@ -27,7 +27,7 @@ float quadratic(float x, float a, float b, float c) {
 float lineThickness = 0.02;
 vec3 plotColor = vec3(1.0, 0.0, 1.0);
 
-float plot(vec2 st, float pct){
+float plot(vec2 st, float pct) {
 	return
 		smoothstep(pct - lineThickness, pct, st.y) -
 		smoothstep(pct, pct + lineThickness, st.y);

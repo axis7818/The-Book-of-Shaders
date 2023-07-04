@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Book of Shaders</title>
+	<script type="text/javascript" src="https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js"></script>
+	<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+	<h1>Algorithmic Drawing</h1>
+
+	<h2>Colors</h2>
+	<p>
+		This shader defines a custom shaping function for mixing between 2 colors.
+		This function ascends with a sharp smoothstep and descends with a quadratic equation.
+	</p>
+	<p>
+		The intention is to evoke a nervous heart beat.
+	</p>
+	<canvas
+		class="glslCanvas"
+		data-fragment-url="/shaders/algorithmic-drawing/color-mixing.frag"
+		width="500"
+		height="500">
+	</canvas>
+
+	<div>
+		<h2>Shaping Functions</h2>
+		<p>For reference</p>
+
+		<figure class="shaping-function">
+			<figcaption>Linear</figcaption>
+			<canvas class="glslCanvas"
+				data-fragment-url="/shaders/shaping-functions/linear.frag"
+				width="100" height="100">
+			</canvas>
+		</figure>
+
+		<figure class="shaping-function">
+			<figcaption>Squared</figcaption>
+			<canvas class="glslCanvas"
+				data-fragment-url="/shaders/shaping-functions/squared.frag"
+				width="100" height="100">
+			</canvas>
+		</figure>
+
+		<figure class="shaping-function">
+			<figcaption>Exponential</figcaption>
+			<canvas class="glslCanvas"
+				data-fragment-url="/shaders/shaping-functions/exponential.frag"
+				width="100" height="100">
+			</canvas>
+		</figure>
+
+		<figure class="shaping-function">
+			<figcaption>Smoothstep</figcaption>
+			<canvas class="glslCanvas"
+				data-fragment-url="/shaders/shaping-functions/smoothstep.frag"
+				width="100" height="100">
+			</canvas>
+		</figure>
+	</div>
+
+</body>
+</html>
